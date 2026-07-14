@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Travel Blog</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+}
+
+nav{
+    background:skyblue;
+    padding:15px;
+}
+
+nav a{
+    color:black;
+    margin:15px;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:red;
+}
+
+.hero{
+    background-image:url("https://picsum.photos/1200/400");
+    background-size:cover;
+    height:350px;
+    text-align:center;
+    color:white;
+    padding-top:120px;
+}
+
+.hero h1{
+    font-family:Georgia;
+}
+
+.place{
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    width:250px;
+    border:1px solid gray;
+    margin:20px;
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+    position:relative;
+}
+
+.card::after{
+    content:"Best Place";
+    background:green;
+    color:white;
+    padding:4px;
+    position:absolute;
+    top:5px;
+    right:5px;
+}
+
+.card img{
+    width:220px;
+    height:180px;
+}
+
+.card:hover{
+    background:lightyellow;
+}
+
+.card:hover img{
+    transform:scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Places</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+
+</nav>
+
+<div class="hero">
+
+<h1>Welcome To My Travel Blog</h1>
+<p>Enjoy Your Trip</p>
+
+</div>
+
+<h2 style="text-align:center;">Featured Destinations</h2>
+
+<div class="place">
+
+<div class="card">
+<img src="https://picsum.photos/220?beach">
+<h3>Goa</h3>
+<p>Beautiful beaches and fun places.</p>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/220?mountain">
+<h3>Ooty</h3>
+<p>Cool weather and green hills.</p>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/220?city">
+<h3>Chennai</h3>
+<p>Famous temples and Marina Beach.</p>
+</div>
+
+</div>
+
+</body>
+</html>

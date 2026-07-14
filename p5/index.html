@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Cards</title>
+
+<style>
+
+body{
+    background-color:lightgray;
+    font-family:Arial;
+}
+
+h1{
+    text-align:center;
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:220px;
+    background:white;
+    margin:20px;
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+    position:relative;
+}
+
+.card:hover{
+    box-shadow:5px 5px 10px gray;
+}
+
+.card::before{
+    content:"SALE";
+    background:red;
+    color:white;
+    padding:4px;
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+
+img{
+    width:200px;
+    height:180px;
+    border-radius:10px;
+}
+
+.card:hover img{
+    transform:scale(1.05);
+}
+
+button{
+    background:blue;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:5px;
+}
+
+button:hover{
+    background:green;
+}
+
+.discount{
+    background:orange;
+    color:white;
+    padding:5px;
+    display:inline-block;
+    margin:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Product Cards</h1>
+
+<div class="container">
+
+<div class="card">
+<img src="https://picsum.photos/200?1">
+<h3>Laptop</h3>
+<p>Price : ₹50000</p>
+<div class="discount">20% OFF</div><br>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/200?2">
+<h3>Mobile</h3>
+<p>Price : ₹25000</p>
+<div class="discount">15% OFF</div><br>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/200?3">
+<h3>Watch</h3>
+<p>Price : ₹5000</p>
+<div class="discount">30% OFF</div><br>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/200?4">
+<h3>Camera</h3>
+<p>Price : ₹35000</p>
+<div class="discount">18% OFF</div><br>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/200?5">
+<h3>Speaker</h3>
+<p>Price : ₹3000</p>
+<div class="discount">10% OFF</div><br>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/200?6">
+<h3>Headphone</h3>
+<p>Price : ₹2000</p>
+<div class="discount">25% OFF</div><br>
+<button>Buy Now</button>
+</div>
+
+</div>
+
+</body>
+</html>

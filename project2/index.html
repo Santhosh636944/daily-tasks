@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-box">
+      <h1>College Admission Form</h1>
+      <form>
+        <label>Student Name</label>
+        <input type="text" placeholder="Enter your name" />
+        <label>Father's Name</label>
+        <input type="text" placeholder="Enter father's name" />
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" />
+        <label>Contact Number</label>
+        <input type="number" placeholder="Enter contact number" />
+
+        <label>Course Selection</label>
+        <select>
+          <option>Select a course</option>
+          <option>MCA</option>
+          <option>BCA</option>
+          <option>B.Tech</option>
+        </select>
+
+        <label>Gender</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" /> Male</label>
+          <label><input type="radio" name="gender" /> Female</label>
+          <label><input type="radio" name="gender" /> Other</label>
+        </div>
+
+        <label>Address</label>
+        <textarea rows="4" placeholder="Enter your address"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
